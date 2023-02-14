@@ -1,0 +1,127 @@
+.background_principal
+  {
+      background-image: URL(imagen_del_background.png) !important;
+      background-size:120%;
+      background-repeat:2;
+      background-position: center center;
+  }
+#imagen_de_mirada_interior
+  {
+    max-height:150px; 
+    max-width:220px;
+  }
+.boton_regreso
+     {
+      max-width:30px !important;
+      height: auto;
+     }
+#test1 
+  {
+    list-style-type:upper-alpha ; 
+  }
+#test2 
+  {
+    list-style-type:upper-roman ; 
+  }
+#foto
+  {
+    max-height:300px; 
+    max-width:400px;
+    min-width:200px
+  }
+#imagen_regresar
+  {
+    max-height: 40px
+  }
+ul li a:hover
+  {
+  background-color:rgb(209, 249, 227);
+  font-size:130%;
+  }
+@keyframes entrada_del_mandala
+  {
+    0% {width:130%; transform:rotate(20deg); translate: -40% -50%; max-height: fit-content;}
+    5% {width:125%; transform:rotate(40deg); translate: -40% -50%; max-height: fit-content;}
+    15% {width:120%; transform:rotate(60deg); translate: -35% -60%; max-height: fit-content;}
+    20% {width:115%; transform:rotate(80deg); translate: -30% -60%; max-height: fit-content;}
+    25% {width:110%; transform:rotate(100deg); translate: -25% -50%; max-height: fit-content;}
+    30% {width:100%; transform:rotate(120deg); translate: -25% -50%; max-height: fit-content;}
+    35% {width:95%; transform:rotate(140deg); translate: -20% -50%; max-height: fit-content;}
+    40% {width:90%; transform:rotate(160deg); translate: -20% -45%; max-height: fit-content;}
+    45% {width:85%; transform:rotate(180deg); translate: -20% -45%; max-height: fit-content;}
+    50% {width:80%; transform:rotate(200deg); translate: -20% -45%; max-height: fit-content;}
+    55% {width:75%; transform:rotate(220deg); translate: -15% -40%; max-height: fit-content;}
+    60% {width:70%; transform:rotate(240deg); translate: -15% -40%; max-height: fit-content;}
+    65% {width:65%; transform:rotate(260deg); translate: -10% -40%; max-height: fit-content;}
+    70% {width:60%; transform:rotate(280deg); translate: -10% -40%; max-height: fit-content;}
+    75% {width:55%; transform:rotate(300deg); translate: 20% -20%; max-height: fit-content;}
+    80% {width:50%; transform:rotate(320deg); translate: 20% -5%; max-height: fit-content;}
+    85% {width:45%; transform:rotate(340deg); translate: 25%  -5%; max-height: fit-content;}
+    90% {width:40%; transform:rotate(360deg); translate: 25%  -5%; max-height: fit-content;}
+    95% {width:35%; transform:rotate(360deg); translate: 25%  0%; max-height: fit-content;}
+    100% {width:19%; transform:rotate(360deg); translate: 0% 0%; max-height: 180px;}
+  }
+#mandala 
+    {
+    width: 19%; 
+    animation-name:entrada_del_mandala;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    min-width: 150px;
+    max-height: 180px;
+    }
+#mandala1
+  {
+    width:19%;
+    min-width: 150px;
+    max-height:180px;
+  }
+#mandala_con_flechas
+  {
+    min-width: 40px;
+  }
+h1
+  {
+    font-family: 'Rye', cursive;
+  }
+.texto-chico
+{
+  font-size:60% !important;
+  font-weight: bolder;
+}
+.texto-mediano
+{
+  font-size:90% !important;
+  font-weight:bold !important;
+}
+h5
+{
+  font-family:'Merriweather', serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+h3
+{
+  font-family:'Merriweather', serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+h4
+{
+  font-family: 'Rye', cursive;
+}
+h2
+{
+  font-family: 'Rye', cursive;
+}
+h6
+{
+  font-family:'Merriweather';
+  font-weight: bold;
+}
+.font-merri
+{
+  font-family:'Merriweather';
+}
