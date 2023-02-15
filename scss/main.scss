@@ -1,0 +1,20 @@
+.background_principal
+  {
+      background-image:url(imagen_del_background.png) !important;
+      background-size:120%;
+      background-repeat:2;
+      background-position: center center;
+  }
+@import "modulos_scss/variables";
+
+@import "modulos_scss/tipografia";
+
+@import "modulos_scss/animacion_del_mandala";
+
+@import "modulos_scss/tamanio_de_imagenes";
+
+@import "modulos_scss/animacion_del_background";
+
+@import "modulos_scss/estilo_de_listas_ordenadas";
+
+@import "modulos_scss/efectos_hover";

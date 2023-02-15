@@ -1,0 +1,21 @@
+@keyframes explosion
+{
+    @for $i from 1 through 100 
+    { 
+        #{$i}% {background-size: 100%* (1-(100 - $i)/100);}
+    }
+}
+.background_de_inicio 
+{
+    background-image:url(imagen_del_background.png) !important;
+    background-size:120%;
+    background-repeat:2;
+    background-position: center center;
+    width: 100%; 
+    animation-name:explosion;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}

@@ -1,0 +1,43 @@
+h1
+  {
+    font-family: $font-titulos;
+  }
+h2
+{
+  font-family: $font-titulos;
+}
+h3
+{
+  font-family:$font-subtitulos;
+  font-weight: bolder;
+  font-style: italic;
+}
+h4
+{
+  font-family: $font-titulos;
+}
+h5
+{
+  font-family:$font-subtitulos ;
+  font-weight: bolder;
+  font-style: italic;
+}
+h6
+{
+  font-family:$font-parrafos;
+  font-weight: bold;
+}
+.font-merri
+{
+  font-family:$font-parrafos;
+}
+.texto-chico
+{
+  font-size:60% !important;
+  font-weight: bolder;
+}
+.texto-mediano
+{
+  font-size:90% !important;
+  font-weight:bold !important;
+}

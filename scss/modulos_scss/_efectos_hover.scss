@@ -1,0 +1,17 @@
+ul li a
+    {
+    font-weight:bold !important;
+    &:hover 
+        {   
+            background-color:$color_hover;
+            font-size:130%;
+        }
+    }
+.eneatipos
+    {
+        margin:0;
+    &:hover
+            {
+                background-color:$color_hover; 
+            }
+        }
