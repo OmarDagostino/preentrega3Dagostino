@@ -1,7 +1,7 @@
 h1
-  {
-    font-family: $font-titulos;
-  }
+{
+  font-family: $font-titulos;
+}
 h2
 {
   font-family: $font-titulos;
@@ -26,6 +26,10 @@ h6
 {
   font-family:$font-parrafos;
   font-weight: bold;
+}
+a
+{
+    text-decoration:none;
 }
 .font-merri
 {

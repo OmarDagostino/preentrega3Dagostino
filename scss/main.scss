@@ -5,16 +5,27 @@
       background-repeat:2;
       background-position: center center;
   }
+/****************************************************************
+*  MODULOS COMPARTIDOS POR VARIAS PAGINAS DEL SITIO             *
+***************************************************************** */
 @import "modulos_scss/variables";
-
+@import "modulos_scss/estilo_de_listas_ordenadas";
+@import "modulos_scss/efectos_hover";
 @import "modulos_scss/tipografia";
-
-@import "modulos_scss/animacion_del_mandala";
-
 @import "modulos_scss/tamanio_de_imagenes";
-
+/*****************************************************************
+*   MODULOS PARA LA PAGINA DEL CAMINO DEL ENEAGRAMA ANIMADA      *
+****************************************************************** */
+@import "modulos_scss/barra_de_navegacion_caminos_animados";
+@import "modulos_scss/estilos_para_mandala_animado";
+@import "modulos_scss/animacion_camino_inicial";
+@import "modulos_scss/animacion_de_flechas";
+@import "modulos_scss/animacion_de_numeros";
+@import "modulos_scss/estilos_y_posiciones_caminos_animados";
+/******************************************************************
+*   MODULOS PARA LA PAGINA ANIMADA INICIAL                        *
+******************************************************************* */
+@import "modulos_scss/animacion_del_mandala";
 @import "modulos_scss/animacion_del_background";
 
-@import "modulos_scss/estilo_de_listas_ordenadas";
 
-@import "modulos_scss/efectos_hover";

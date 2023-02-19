@@ -1,0 +1,41 @@
+#grilla
+{
+    display:grid;
+    grid-template-rows: repeat (5, 1fr);
+    grid-template-columns: repeat (12, 1fr);  
+}
+#header-1
+{
+    grid-column: 3/11;
+    grid-row: 1/2;
+    justify-content: center;
+    text-align: center;
+}
+#saltar_animacion
+{
+    grid-column:1/2;
+    grid-row:3/4;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: aqua;
+    color:blue;
+    font-weight: bold;
+    margin:3px;
+    padding:5px;
+    width:fit-content;
+    height:fit-content;
+    transform:translate(0px, 130px);
+}
+#pie-de-pagina2
+{
+    grid-column: 6/12;
+    grid-row:5/6;
+    transform:translate(0px, 0px);   
+}
+#pie-de-pagina1
+{
+    grid-column: 1/6;
+    grid-row:5/6;
+    transform:translate(-60px, 0px);         
+}

@@ -1,0 +1,104 @@
+$top_numeros : 25px 80px 208px 23px 80px 203px 155px 155px 0px; 
+$left_numeros : 174px 2px 55px 38px 208px 155px 203px 4px 103px;
+$demora: 6 1 2 3 4 5 9 7 8;
+@for $u from 1 through 9 
+{ 
+    .numeros:nth-of-type(#{$u})
+    {   font-weight: bold;
+        position:absolute;
+        top:nth($top_numeros, $u);
+        left:nth($left_numeros, $u);
+        @if $u == 1 {animation-name:parpadeo_de_numero_1} @else if  $u == 7 {animation-name:parpadeo_de_numero_1} @else {animation-name:parpadeo_de_numero};
+        animation-delay: (nth($demora, $u)-1)*($duracion/9);   
+        animation-fill-mode: forwards;
+        animation-duration: $duracion/9;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        border: 1px solid transparent;
+        border-radius:50%;
+        padding:2px;
+        @if $u == 1 {z-index:16};
+    } 
+}  
+@keyframes parpadeo_de_numero 
+{
+    0% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    5% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    10% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    15% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    20% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    25% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    30% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    35% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    40% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    45% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    50% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    55% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    60% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    65% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    70% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    75% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    80% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    85% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    90% {color:black; background-color:white; border: opx solid white;z-index:8;}
+    95% {color:white; background-color:white; border: opx solid white;z-index:8;}
+    100% {color:transparent; background-color:transparent; border: opx solid transparent;z-index:8;}
+}
+@keyframes parpadeo_de_numero_1
+{
+    0% {color:black; background-color:white; border: opx solid white; z-index:18;}
+    5% {color:white; background-color:white; border: opx solid white; z-index:18;}
+    10% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    15% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    20% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    25% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    30% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    35% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    40% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    45% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    50% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    55% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    60% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    65% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    70% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    75% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    80% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    85% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    90% {color:black; background-color:white; border: opx solid white;z-index:18;}
+    95% {color:white; background-color:white; border: opx solid white;z-index:18;}
+    100% {color:transparent; background-color:transparent; border: opx solid white;z-index:18;}
+}
+@for $e from 1 through 9 
+{ 
+    .numero:nth-of-type(#{$e})
+    {
+        font-weight: bold;
+        position:absolute;
+        top:nth($top_numeros, $e);
+        left:nth($left_numeros, $e);
+        color:transparent;
+        animation-name: realce_de_numero;
+        animation-delay: ($duracion / 9) * ($e - 1);  
+        animation-fill-mode:forwards;
+        animation-duration: $duracion/9 ;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        z-index:15;
+    }      
+}
+@keyframes realce_de_numero
+{
+    0% {border:1px solid black; 
+        border-radius: 50%; 
+        background-color: yellow;
+        padding:2px; color:black; 
+        margin:0;   
+        }
+    100% {border:1px solid transparent; 
+        border-radius: 50%; 
+        background-color: transparent;
+        padding:2px; 
+        color:black;
+        margin:0;
+        }
+}

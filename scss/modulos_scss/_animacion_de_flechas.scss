@@ -1,0 +1,32 @@
+/* ****************************************************
+      muestra de flechas en el mandala
+    ************************************************** */
+$top: 35px 110px 88px 25px 113px 85px 130px 50px 48px;
+$left: 64px 12px 18px 95px 158px 133px 78px 28px 125px;
+$rotate: 163deg 65deg 263deg 18deg 112deg 275deg 180deg 301deg 58deg;
+$scalex: 295% 210% 284% 290% 200% 275% 308% 287% 290%;
+
+@for $o from 1 through 9 
+{ 
+    #flecha_#{$o}
+    { 
+        font-size: 400%;
+        position:absolute;
+        top:nth($top, $o);
+        left:nth($left, $o);
+        transform:rotate( (nth($rotate, $o))) scalex( (nth($scalex, $o)));
+        display:inline-block;
+        color:transparent;
+        animation-name: entra_flecha;
+        animation-fill-mode: forwards;
+        animation-delay: ( $duracion - $duracion * (( 10 - $o ) / 9 ) );
+        animation-duration: ( $duracion / 9);
+        animation-iteration-count: 1;
+    }
+}
+@keyframes entra_flecha 
+{
+    0% {color:black;}
+    90% {color: black;}
+    100% {color: $color-difuminado;}
+}

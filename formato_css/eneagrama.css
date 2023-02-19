@@ -4,6 +4,35 @@
   background-repeat: 2;
   background-position: center center; }
 
+/****************************************************************
+*  MODULOS COMPARTIDOS POR VARIAS PAGINAS DEL SITIO             *
+***************************************************************** */
+#test1 {
+  list-style-type: upper-alpha; }
+
+#test2 {
+  list-style-type: upper-roman; }
+
+ul li a {
+  font-weight: bold !important; }
+  ul li a:hover {
+    background-color: #d1f9e3;
+    font-size: 130%; }
+
+.eneatipos {
+  margin: 0; }
+  .eneatipos:hover {
+    background-color: #d1f9e3; }
+
+.dropup-content p:hover {
+  background-color: white; }
+
+.dropup:hover .dropup-content {
+  display: block; }
+
+.dropup:hover .dropbtn {
+  background-color: #2980B9; }
+
 h1 {
   font-family: "Rye", cursive; }
 
@@ -27,6 +56,9 @@ h6 {
   font-family: "Merriweather";
   font-weight: bold; }
 
+a {
+  text-decoration: none; }
+
 .font-merri {
   font-family: "Merriweather"; }
 
@@ -38,6 +70,1173 @@ h6 {
   font-size: 90% !important;
   font-weight: bold !important; }
 
+#imagen_de_mirada_interior {
+  max-height: 150px;
+  max-width: 220px; }
+
+#foto {
+  max-height: 300px;
+  max-width: 400px;
+  min-width: 200px; }
+
+#mandala1 {
+  width: 17%;
+  min-width: 150px;
+  max-height: 180px; }
+
+#mandala_con_flechas {
+  min-width: 40px; }
+
+/*****************************************************************
+*   MODULOS PARA LA PAGINA DEL CAMINO DEL ENEAGRAMA ANIMADA      *
+****************************************************************** */
+.menu-de-navegacion {
+  list-style-type: none;
+  margin-inline: 0px;
+  margin-top: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  width: 100%; }
+
+.item-de-navegacion {
+  padding: 0 1%; }
+
+.link-de-navegacion {
+  display: inline-flex;
+  color: #0d6efd;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+  font-weight: bold; }
+
+@media only screen and (max-width: 319px) {
+  .barra-para-dispositivos-medianos-y-mas {
+    display: none; } }
+
+@media only screen and (min-width: 320px) {
+  .barra-para-dispositivos-chicos {
+    display: none; } }
+
+.dropbtn {
+  background-color: #0d6efd;
+  color: white;
+  padding: 6px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px; }
+
+.dropup {
+  position: relative;
+  display: inline-block; }
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100; }
+
+p {
+  margin: 0 0 0 0; }
+
+#mandala {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  position: relative; }
+  #mandala div p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 63px !important; }
+
+#circulo {
+  position: relative;
+  left: 10px;
+  top: 26px;
+  z-index: 200;
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: 100; }
+
+/* **************************************** 
+    se exhibe el camino de cada eneatipo 
+        para ser leido 
+*******************************************  */
+#explicacion_inicial {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin-top: 30px;
+  margin-bottom: 0px; }
+
+.subtitulo_explicacion_inicial {
+  text-align: center;
+  margin: opx;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold; }
+
+.explicacion_del_camino_inicial:nth-of-type(1) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.explicacion_del_camino_inicial:nth-of-type(2) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 6.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.explicacion_del_camino_inicial:nth-of-type(3) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 13.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.explicacion_del_camino_inicial:nth-of-type(4) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.explicacion_del_camino_inicial:nth-of-type(5) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 26.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.explicacion_del_camino_inicial:nth-of-type(6) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 33.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.explicacion_del_camino_inicial:nth-of-type(7) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 40s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.explicacion_del_camino_inicial:nth-of-type(8) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 46.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.explicacion_del_camino_inicial:nth-of-type(9) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  visibility: hidden;
+  animation-name: entra_explicacion_inicial;
+  animation-fill-mode: forwards;
+  animation-delay: 53.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+@keyframes entra_explicacion_inicial {
+  0% {
+    visibility: hidden;
+    transform: translate(950px, -100px);
+    size: 200%;
+    background-color: yellow;
+    font-weight: bold; }
+  10% {
+    visibility: visible;
+    transform: translate(950px, -100px);
+    size: 200%;
+    background-color: yellow;
+    font-weight: bold; }
+  80% {
+    visibility: visible;
+    transform: translate(950px, -100px);
+    size: 200%;
+    background-color: transparent;
+    font-weight: bold; }
+  85% {
+    visibility: visible;
+    transform: translate(950px, -100px);
+    size: 150%;
+    background-color: transparent;
+    font-weight: 100; }
+  90% {
+    visibility: visible;
+    transform: translate(950px, -100px);
+    size: 120%;
+    background-color: transparent;
+    font-weight: 100; }
+  94% {
+    visibility: hidden;
+    transform: translate(950px, -100px);
+    size: 120%;
+    background-color: transparent;
+    font-weight: 100; }
+  100% {
+    visibility: hidden;
+    transform: translate(950px, -100px);
+    size: 120%;
+    background-color: transparent; } }
+
+/* **************************************************
+   se almacena la explicacion del camino en un cuadro 
+                     difuminado en el fondo 
+   **************************************************  */
+#explicacion {
+  grid-column: 2/12;
+  grid-row: 2/6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  height: fit-content; }
+
+.subtitulo_explicacion {
+  text-align: center;
+  margin: opx;
+  font-size: 14px;
+  font-style: italic; }
+
+.explicacion_del_camino:nth-of-type(1) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+.explicacion_del_camino:nth-of-type(2) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 6.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+.explicacion_del_camino:nth-of-type(3) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 13.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+.explicacion_del_camino:nth-of-type(4) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+.explicacion_del_camino:nth-of-type(5) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 26.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+.explicacion_del_camino:nth-of-type(6) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 33.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+.explicacion_del_camino:nth-of-type(7) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 40s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+.explicacion_del_camino:nth-of-type(8) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 46.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+.explicacion_del_camino:nth-of-type(9) {
+  color: black;
+  animation-name: entra_explicacion;
+  animation-fill-mode: forwards;
+  animation-delay: 53.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  visibility: hidden;
+  min-width: 100px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  height: fit-content; }
+
+@keyframes entra_explicacion {
+  0% {
+    visibility: hidden;
+    color: gray;
+    font-size: 10px; }
+  50% {
+    visibility: hidden;
+    color: gray;
+    font-size: 10px; }
+  96% {
+    visibility: hidden;
+    color: gray;
+    font-size: 10px; }
+  100% {
+    visibility: visible;
+    color: gray;
+    font-size: 10px; } }
+
+/* ****************************************************
+      muestra de flechas en el mandala
+    ************************************************** */
+#flecha_1 {
+  font-size: 400%;
+  position: absolute;
+  top: 35px;
+  left: 64px;
+  transform: rotate(163deg) scalex(295%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+#flecha_2 {
+  font-size: 400%;
+  position: absolute;
+  top: 110px;
+  left: 12px;
+  transform: rotate(65deg) scalex(210%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 6.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+#flecha_3 {
+  font-size: 400%;
+  position: absolute;
+  top: 88px;
+  left: 18px;
+  transform: rotate(263deg) scalex(284%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 13.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+#flecha_4 {
+  font-size: 400%;
+  position: absolute;
+  top: 25px;
+  left: 95px;
+  transform: rotate(18deg) scalex(290%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+#flecha_5 {
+  font-size: 400%;
+  position: absolute;
+  top: 113px;
+  left: 158px;
+  transform: rotate(112deg) scalex(200%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 26.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+#flecha_6 {
+  font-size: 400%;
+  position: absolute;
+  top: 85px;
+  left: 133px;
+  transform: rotate(275deg) scalex(275%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 33.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+#flecha_7 {
+  font-size: 400%;
+  position: absolute;
+  top: 130px;
+  left: 78px;
+  transform: rotate(180deg) scalex(308%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 40s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+#flecha_8 {
+  font-size: 400%;
+  position: absolute;
+  top: 50px;
+  left: 28px;
+  transform: rotate(301deg) scalex(287%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 46.66667s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+#flecha_9 {
+  font-size: 400%;
+  position: absolute;
+  top: 48px;
+  left: 125px;
+  transform: rotate(58deg) scalex(290%);
+  display: inline-block;
+  color: transparent;
+  animation-name: entra_flecha;
+  animation-fill-mode: forwards;
+  animation-delay: 53.33333s;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1; }
+
+@keyframes entra_flecha {
+  0% {
+    color: black; }
+  90% {
+    color: black; }
+  100% {
+    color: gray; } }
+
+.numeros:nth-of-type(1) {
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  left: 174px;
+  animation-name: parpadeo_de_numero_1;
+  animation-delay: 33.33333s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px;
+  z-index: 16; }
+
+.numeros:nth-of-type(2) {
+  font-weight: bold;
+  position: absolute;
+  top: 80px;
+  left: 2px;
+  animation-name: parpadeo_de_numero;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px; }
+
+.numeros:nth-of-type(3) {
+  font-weight: bold;
+  position: absolute;
+  top: 208px;
+  left: 55px;
+  animation-name: parpadeo_de_numero;
+  animation-delay: 6.66667s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px; }
+
+.numeros:nth-of-type(4) {
+  font-weight: bold;
+  position: absolute;
+  top: 23px;
+  left: 38px;
+  animation-name: parpadeo_de_numero;
+  animation-delay: 13.33333s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px; }
+
+.numeros:nth-of-type(5) {
+  font-weight: bold;
+  position: absolute;
+  top: 80px;
+  left: 208px;
+  animation-name: parpadeo_de_numero;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px; }
+
+.numeros:nth-of-type(6) {
+  font-weight: bold;
+  position: absolute;
+  top: 203px;
+  left: 155px;
+  animation-name: parpadeo_de_numero;
+  animation-delay: 26.66667s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px; }
+
+.numeros:nth-of-type(7) {
+  font-weight: bold;
+  position: absolute;
+  top: 155px;
+  left: 203px;
+  animation-name: parpadeo_de_numero_1;
+  animation-delay: 53.33333s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px; }
+
+.numeros:nth-of-type(8) {
+  font-weight: bold;
+  position: absolute;
+  top: 155px;
+  left: 4px;
+  animation-name: parpadeo_de_numero;
+  animation-delay: 40s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px; }
+
+.numeros:nth-of-type(9) {
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 103px;
+  animation-name: parpadeo_de_numero;
+  animation-delay: 46.66667s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px; }
+
+@keyframes parpadeo_de_numero {
+  0% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  5% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  10% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  15% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  20% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  25% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  30% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  35% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  40% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  45% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  50% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  55% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  60% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  65% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  70% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  75% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  80% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  85% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  90% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  95% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 8; }
+  100% {
+    color: transparent;
+    background-color: transparent;
+    border: opx solid transparent;
+    z-index: 8; } }
+
+@keyframes parpadeo_de_numero_1 {
+  0% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  5% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  10% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  15% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  20% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  25% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  30% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  35% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  40% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  45% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  50% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  55% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  60% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  65% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  70% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  75% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  80% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  85% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  90% {
+    color: black;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  95% {
+    color: white;
+    background-color: white;
+    border: opx solid white;
+    z-index: 18; }
+  100% {
+    color: transparent;
+    background-color: transparent;
+    border: opx solid white;
+    z-index: 18; } }
+
+.numero:nth-of-type(1) {
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  left: 174px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+.numero:nth-of-type(2) {
+  font-weight: bold;
+  position: absolute;
+  top: 80px;
+  left: 2px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 6.66667s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+.numero:nth-of-type(3) {
+  font-weight: bold;
+  position: absolute;
+  top: 208px;
+  left: 55px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 13.33333s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+.numero:nth-of-type(4) {
+  font-weight: bold;
+  position: absolute;
+  top: 23px;
+  left: 38px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+.numero:nth-of-type(5) {
+  font-weight: bold;
+  position: absolute;
+  top: 80px;
+  left: 208px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 26.66667s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+.numero:nth-of-type(6) {
+  font-weight: bold;
+  position: absolute;
+  top: 203px;
+  left: 155px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 33.33333s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+.numero:nth-of-type(7) {
+  font-weight: bold;
+  position: absolute;
+  top: 155px;
+  left: 203px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 40s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+.numero:nth-of-type(8) {
+  font-weight: bold;
+  position: absolute;
+  top: 155px;
+  left: 4px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 46.66667s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+.numero:nth-of-type(9) {
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 103px;
+  color: transparent;
+  animation-name: realce_de_numero;
+  animation-delay: 53.33333s;
+  animation-fill-mode: forwards;
+  animation-duration: 6.66667s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  z-index: 15; }
+
+@keyframes realce_de_numero {
+  0% {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: yellow;
+    padding: 2px;
+    color: black;
+    margin: 0; }
+  100% {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 2px;
+    color: black;
+    margin: 0; } }
+
+#grilla {
+  display: grid;
+  grid-template-rows: repeat 5, 1fr;
+  grid-template-columns: repeat 12, 1fr; }
+
+#header-1 {
+  grid-column: 3/11;
+  grid-row: 1/2;
+  justify-content: center;
+  text-align: center; }
+
+#saltar_animacion {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: aqua;
+  color: blue;
+  font-weight: bold;
+  margin: 3px;
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+  transform: translate(0px, 130px); }
+
+#pie-de-pagina2 {
+  grid-column: 6/12;
+  grid-row: 5/6;
+  transform: translate(0px, 0px); }
+
+#pie-de-pagina1 {
+  grid-column: 1/6;
+  grid-row: 5/6;
+  transform: translate(-60px, 0px); }
+
+/******************************************************************
+*   MODULOS PARA LA PAGINA ANIMADA INICIAL                        *
+******************************************************************* */
 @keyframes entrada_del_mandala {
   1% {
     width: 128.87%;
@@ -551,26 +1750,6 @@ h6 {
   min-width: 150px;
   max-height: 180px; }
 
-#imagen_de_mirada_interior {
-  max-height: 150px;
-  max-width: 220px; }
-
-#foto {
-  max-height: 300px;
-  max-width: 400px;
-  min-width: 200px; }
-
-#imagen_regresar {
-  max-height: 40px; }
-
-#mandala1 {
-  width: 17%;
-  min-width: 150px;
-  max-height: 180px; }
-
-#mandala_con_flechas {
-  min-width: 40px; }
-
 @keyframes explosion {
   1% {
     background-size: 1%; }
@@ -785,20 +1964,3 @@ h6 {
   animation-delay: 1s;
   animation-duration: 2s;
   animation-iteration-count: 1; }
-
-#test1 {
-  list-style-type: upper-alpha; }
-
-#test2 {
-  list-style-type: upper-roman; }
-
-ul li a {
-  font-weight: bold !important; }
-  ul li a:hover {
-    background-color: #d1f9e3;
-    font-size: 130%; }
-
-.eneatipos {
-  margin: 0; }
-  .eneatipos:hover {
-    background-color: #d1f9e3; }
