@@ -19,7 +19,7 @@ $scalex: 295% 210% 284% 290% 200% 275% 308% 287% 290%;
         color:transparent;
         animation-name: entra_flecha;
         animation-fill-mode: forwards;
-        animation-delay: ( $duracion - $duracion * (( 10 - $o ) / 9 ) );
+        animation-delay: $mandala-duration + ( $duracion - $duracion * (( 10 - $o ) / 9 ) );
         animation-duration: ( $duracion / 9);
         animation-iteration-count: 1;
     }

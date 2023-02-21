@@ -15,7 +15,7 @@
     animation-name:explosion;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: $mandala-duration;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
