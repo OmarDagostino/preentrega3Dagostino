@@ -73,11 +73,7 @@ a {
 .texto-boton {
   font-size: 75% !important;
   font-weight: bolder !important;
-  /*font-family: 'Fredericka the Great', cursive;*/
-  font-family: 'Gloock', serif;
-  /*  font-family: 'IM Fell DW Pica', serif;
-  font-family: 'Merriweather', serif;
-  font-family: 'Rye', cursive;*/ }
+  font-family: 'Gloock', serif; }
 
 #imagen_de_mirada_interior {
   max-height: 150px;
@@ -103,57 +99,6 @@ a {
 /*****************************************************************
 *   MODULOS PARA LA PAGINA DEL CAMINO DEL ENEAGRAMA ANIMADA      *
 ****************************************************************** */
-.menu-de-navegacion {
-  list-style-type: none;
-  margin-inline: 0px;
-  margin-top: 0;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: fixed;
-  width: 100%; }
-
-.item-de-navegacion {
-  padding: 0 1%; }
-
-.link-de-navegacion {
-  display: inline-flex;
-  color: #0d6efd;
-  text-align: center;
-  padding: 0px;
-  text-decoration: none;
-  font-weight: bold; }
-
-@media only screen and (max-width: 319px) {
-  .barra-para-dispositivos-medianos-y-mas {
-    display: none; } }
-
-@media only screen and (min-width: 320px) {
-  .barra-para-dispositivos-chicos {
-    display: none; } }
-
-.dropbtn {
-  background-color: #0d6efd;
-  color: white;
-  padding: 6px;
-  font-size: 16px;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.dropup {
-  position: relative;
-  display: inline-block; }
-
-.dropup-content {
-  display: none;
-  position: absolute;
-  bottom: 50px;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 100; }
-
 p {
   margin: 0 0 0 0; }
 
@@ -210,7 +155,7 @@ p {
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
   animation-delay: 3s;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -226,8 +171,8 @@ p {
   visibility: hidden;
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
-  animation-delay: 6.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 16.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -243,8 +188,8 @@ p {
   visibility: hidden;
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
-  animation-delay: 9.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 29.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -260,8 +205,8 @@ p {
   visibility: hidden;
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
-  animation-delay: 13s;
-  animation-duration: 3.33333s;
+  animation-delay: 43s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -277,8 +222,8 @@ p {
   visibility: hidden;
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
-  animation-delay: 16.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 56.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -294,8 +239,8 @@ p {
   visibility: hidden;
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
-  animation-delay: 19.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 69.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -311,8 +256,8 @@ p {
   visibility: hidden;
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
-  animation-delay: 23s;
-  animation-duration: 3.33333s;
+  animation-delay: 83s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -328,8 +273,8 @@ p {
   visibility: hidden;
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
-  animation-delay: 26.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 96.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -345,8 +290,8 @@ p {
   visibility: hidden;
   animation-name: entra_explicacion_inicial;
   animation-fill-mode: forwards;
-  animation-delay: 29.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 109.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -362,8 +307,8 @@ p {
   visibility: hidden;
   animation-name: mensaje_final;
   animation-fill-mode: forwards;
-  animation-delay: 33s;
-  animation-duration: 3.33333s;
+  animation-delay: 123s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   display: block; }
@@ -451,7 +396,7 @@ p {
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
   animation-delay: 3s;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -467,8 +412,8 @@ p {
   color: black;
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
-  animation-delay: 6.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 16.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -484,8 +429,8 @@ p {
   color: black;
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
-  animation-delay: 9.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 29.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -501,8 +446,8 @@ p {
   color: black;
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
-  animation-delay: 13s;
-  animation-duration: 3.33333s;
+  animation-delay: 43s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -518,8 +463,8 @@ p {
   color: black;
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
-  animation-delay: 16.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 56.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -535,8 +480,8 @@ p {
   color: black;
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
-  animation-delay: 19.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 69.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -552,8 +497,8 @@ p {
   color: black;
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
-  animation-delay: 23s;
-  animation-duration: 3.33333s;
+  animation-delay: 83s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -569,8 +514,8 @@ p {
   color: black;
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
-  animation-delay: 26.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 96.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -586,8 +531,8 @@ p {
   color: black;
   animation-name: entra_explicacion;
   animation-fill-mode: forwards;
-  animation-delay: 29.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 109.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   visibility: hidden;
@@ -635,7 +580,7 @@ p {
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
   animation-delay: 3s;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 #flecha_2 {
@@ -648,8 +593,8 @@ p {
   color: transparent;
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
-  animation-delay: 6.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 16.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 #flecha_3 {
@@ -662,8 +607,8 @@ p {
   color: transparent;
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
-  animation-delay: 9.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 29.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 #flecha_4 {
@@ -676,8 +621,8 @@ p {
   color: transparent;
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
-  animation-delay: 13s;
-  animation-duration: 3.33333s;
+  animation-delay: 43s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 #flecha_5 {
@@ -690,8 +635,8 @@ p {
   color: transparent;
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
-  animation-delay: 16.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 56.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 #flecha_6 {
@@ -704,8 +649,8 @@ p {
   color: transparent;
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
-  animation-delay: 19.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 69.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 #flecha_7 {
@@ -718,8 +663,8 @@ p {
   color: transparent;
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
-  animation-delay: 23s;
-  animation-duration: 3.33333s;
+  animation-delay: 83s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 #flecha_8 {
@@ -732,8 +677,8 @@ p {
   color: transparent;
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
-  animation-delay: 26.33333s;
-  animation-duration: 3.33333s;
+  animation-delay: 96.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 #flecha_9 {
@@ -746,8 +691,8 @@ p {
   color: transparent;
   animation-name: entra_flecha;
   animation-fill-mode: forwards;
-  animation-delay: 29.66667s;
-  animation-duration: 3.33333s;
+  animation-delay: 109.66667s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1; }
 
 @keyframes entra_flecha {
@@ -764,9 +709,9 @@ p {
   top: 25px;
   left: 174px;
   animation-name: parpadeo_de_numero_1;
-  animation-delay: 19.66667s;
+  animation-delay: 69.66667s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -782,7 +727,7 @@ p {
   animation-name: parpadeo_de_numero;
   animation-delay: 3s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -795,9 +740,9 @@ p {
   top: 208px;
   left: 55px;
   animation-name: parpadeo_de_numero;
-  animation-delay: 6.33333s;
+  animation-delay: 16.33333s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -810,9 +755,9 @@ p {
   top: 23px;
   left: 38px;
   animation-name: parpadeo_de_numero;
-  animation-delay: 9.66667s;
+  animation-delay: 29.66667s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -825,9 +770,9 @@ p {
   top: 80px;
   left: 208px;
   animation-name: parpadeo_de_numero;
-  animation-delay: 13s;
+  animation-delay: 43s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -840,9 +785,9 @@ p {
   top: 203px;
   left: 155px;
   animation-name: parpadeo_de_numero;
-  animation-delay: 16.33333s;
+  animation-delay: 56.33333s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -855,9 +800,9 @@ p {
   top: 155px;
   left: 203px;
   animation-name: parpadeo_de_numero_1;
-  animation-delay: 29.66667s;
+  animation-delay: 109.66667s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -870,9 +815,9 @@ p {
   top: 155px;
   left: 4px;
   animation-name: parpadeo_de_numero;
-  animation-delay: 23s;
+  animation-delay: 83s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -885,9 +830,9 @@ p {
   top: 0px;
   left: 103px;
   animation-name: parpadeo_de_numero;
-  animation-delay: 26.33333s;
+  animation-delay: 96.33333s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   border: 1px solid transparent;
@@ -1117,7 +1062,7 @@ p {
   animation-name: realce_de_numero;
   animation-delay: 3s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
@@ -1129,9 +1074,9 @@ p {
   left: 2px;
   color: transparent;
   animation-name: realce_de_numero;
-  animation-delay: 6.33333s;
+  animation-delay: 16.33333s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
@@ -1143,9 +1088,9 @@ p {
   left: 55px;
   color: transparent;
   animation-name: realce_de_numero;
-  animation-delay: 9.66667s;
+  animation-delay: 29.66667s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
@@ -1157,9 +1102,9 @@ p {
   left: 38px;
   color: transparent;
   animation-name: realce_de_numero;
-  animation-delay: 13s;
+  animation-delay: 43s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
@@ -1171,9 +1116,9 @@ p {
   left: 208px;
   color: transparent;
   animation-name: realce_de_numero;
-  animation-delay: 16.33333s;
+  animation-delay: 56.33333s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
@@ -1185,9 +1130,9 @@ p {
   left: 155px;
   color: transparent;
   animation-name: realce_de_numero;
-  animation-delay: 19.66667s;
+  animation-delay: 69.66667s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
@@ -1199,9 +1144,9 @@ p {
   left: 203px;
   color: transparent;
   animation-name: realce_de_numero;
-  animation-delay: 23s;
+  animation-delay: 83s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
@@ -1213,9 +1158,9 @@ p {
   left: 4px;
   color: transparent;
   animation-name: realce_de_numero;
-  animation-delay: 26.33333s;
+  animation-delay: 96.33333s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
@@ -1227,9 +1172,9 @@ p {
   left: 103px;
   color: transparent;
   animation-name: realce_de_numero;
-  animation-delay: 29.66667s;
+  animation-delay: 109.66667s;
   animation-fill-mode: forwards;
-  animation-duration: 3.33333s;
+  animation-duration: 13.33333s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 15; }
