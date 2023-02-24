@@ -1,13 +1,7 @@
-.background_principal
-  {
-      background-image:url(imagen_del_background.png) !important;
-      background-size:120%;
-      background-repeat:2;
-      background-position: center center;
-  }
 /****************************************************************
 *  MODULOS COMPARTIDOS POR VARIAS PAGINAS DEL SITIO             *
 ***************************************************************** */
+@import "modulos_scss/_background.scss";
 @import "modulos_scss/variables";
 @import "modulos_scss/estilo_de_listas_ordenadas";
 @import "modulos_scss/efectos_hover";

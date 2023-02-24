@@ -1,12 +1,12 @@
+/****************************************************************
+*  MODULOS COMPARTIDOS POR VARIAS PAGINAS DEL SITIO             *
+***************************************************************** */
 .background_principal {
   background-image: url(imagen_del_background.png) !important;
   background-size: 120%;
   background-repeat: 2;
   background-position: center center; }
 
-/****************************************************************
-*  MODULOS COMPARTIDOS POR VARIAS PAGINAS DEL SITIO             *
-***************************************************************** */
 #test1 {
   list-style-type: upper-alpha; }
 
@@ -54,7 +54,8 @@ h5 {
 
 h6 {
   font-family: "Merriweather";
-  font-weight: bold; }
+  font-weight: bold;
+  font-style: normal; }
 
 a {
   text-decoration: none; }
@@ -64,15 +65,18 @@ a {
 
 .texto-chico {
   font-size: 60% !important;
-  font-weight: bolder; }
+  font-weight: bold;
+  font-style: normal; }
 
 .texto-mediano {
   font-size: 90% !important;
-  font-weight: bold !important; }
+  font-weight: bold;
+  font-style: normal; }
 
 .texto-boton {
   font-size: 75% !important;
-  font-weight: bolder !important;
+  font-weight: bolder;
+  font-style: normal;
   font-family: 'Gloock', serif; }
 
 #imagen_de_mirada_interior {

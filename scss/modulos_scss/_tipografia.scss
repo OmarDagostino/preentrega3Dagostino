@@ -1,3 +1,8 @@
+@mixin fonts($weight, $style)
+{
+  font-weight:$weight;
+  font-style:$style;  
+}
 h1
 {
   font-family: $font-titulos;
@@ -9,8 +14,7 @@ h2
 h3
 {
   font-family:$font-subtitulos;
-  font-weight: bolder;
-  font-style: italic;
+  @include fonts(bolder,italic);
 }
 h4
 {
@@ -19,13 +23,12 @@ h4
 h5
 {
   font-family:$font-subtitulos ;
-  font-weight: bolder;
-  font-style: italic;
+  @include fonts(bolder,italic);
 }
 h6
 {
   font-family:$font-parrafos;
-  font-weight: bold;
+  @include fonts(bold,normal);
 }
 a
 {
@@ -38,16 +41,16 @@ a
 .texto-chico
 {
   font-size:60% !important;
-  font-weight: bolder;
+  @include fonts(bold,normal);
 }
 .texto-mediano
 {
   font-size:90% !important;
-  font-weight:bold !important;
+  @include fonts(bold,normal) ;
 }
 .texto-boton
 {
   font-size:75% !important;
-  font-weight:bolder !important;
+  @include fonts(bolder,normal);
   font-family: 'Gloock', serif;
 }
